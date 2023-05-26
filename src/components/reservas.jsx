@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Button ,Row,FormSelect} from "react-bootstrap";
 import { useNavigate  } from "react-router-dom";
 import Editar from "./editar";
-const estados = ["Por Confirmar","Agendado","Cancelada","Cumpilda"]
+const estados = ["Por Confirmar","Agendada","Cancelada","Completa"]
 function ViewReservas(){
     const navigate = useNavigate();
     const [filtro, setFiltro]=useState("Todas")

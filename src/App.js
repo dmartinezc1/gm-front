@@ -6,6 +6,7 @@ import Home from './components/home';
 import ViewReservas from './components/reservas';
 import Editar from './components/editar';
 import Crear from './components/crear';
+import EditarPublico from './components/editarU';
 
 function App() {
   const [user,setUser] = useState("")
@@ -27,7 +28,7 @@ function App() {
           <Route path="" element={<Home user={user}></Home>}/>
           <Route path="/reservas" element={<ViewReservas></ViewReservas>}/>
           <Route path="/agendar" element={<Crear/>}/>
-          <Route path="/editar/:id" element={<Editar/>}/>
+          <Route path="/editar" element={<EditarPublico/>}/>
         </Routes>
       </BrowserRouter>
       

@@ -18,7 +18,7 @@ function Home(props){
                     </Row>
 
                     <Row style={{margin:"15px"}}>
-                        <Button>Editar cita</Button>
+                        <Button onClick={()=>navigate("/editar")}>Editar cita</Button>
                     </Row>
                     
                 </Col>:
@@ -26,6 +26,10 @@ function Home(props){
                     <Row style={{margin:"15px"}}>
                         <Button onClick={()=>navigate("/reservas")}>Ver citas</Button>
                     </Row>
+                    <Row style={{margin:"15px"}}>
+                        <Button onClick={()=>navigate("/agendar")}>Agendar cita</Button>
+                    </Row>
+
                 </Col>}
             </Row>
             

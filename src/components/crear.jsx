@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Row,Col, Image, Button, Card } from "react-bootstrap";
 import { useNavigate  } from "react-router-dom";
 
-const duracion=[1,1,3,1,2]
-const proced = ["Control","Vacuna","Cirugía","Control","Baño"]
+const duracion=[1,1,3,2]
+const proced = ["Control","Vacuna","Cirugía","Baño"]
 function Crear(){
     const navigate = useNavigate()
     const [reserva, setReserva] =useState([])
@@ -70,8 +70,7 @@ function Crear(){
                                 <option value={0}>Control</option>
                                 <option value={1}>Vacuna</option>
                                 <option value={2}>Cirugía</option>
-                                <option value={3}>Control</option>
-                                <option value={4}>Baño</option>
+                                <option value={3}>Baño</option>
                             </select>
                         </Col>
                     </Row>
